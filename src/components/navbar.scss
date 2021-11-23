@@ -1,0 +1,29 @@
+@media screen and (min-width: 769px) and (max-width: 1440px) {
+  .outter-container {
+    width: 1385px;
+    height: 96px;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    right: 0;
+    svg {
+      margin-right: 64px;
+      position: relative;
+    }
+
+    .line {
+      width: 473px;
+      height: 1px;
+      position: relative;
+      margin-right: -30px;
+      opacity: 25.15%;
+      z-index: 3;
+    }
+    .navbar-container {
+      width: 830px;
+      height: 100%;
+      background: rgba(255, 255, 255, 0.04);
+      backdrop-filter: blur(81.5485px);
+    }
+  }
+}

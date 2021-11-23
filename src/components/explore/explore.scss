@@ -1,0 +1,11 @@
+@media screen and (min-width: 769px) and (max-width: 1440px) {
+    .explore-container{
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        background-image: url("../../static/home/background-home-desktop.jpg");
+        background-size: cover;
+        padding: 40px 0px 131px 55px;
+    }
+
+}
