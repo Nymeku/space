@@ -1,10 +1,11 @@
 import React from 'react';
+import Navbar from '../navbar';
 import './crew.scss'
 
 function Crew() {
     return (
-        <div>
-            Crew
+        <div className="crew-container">
+            <Navbar />
         </div>
     );
 }

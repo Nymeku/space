@@ -1,4 +1,12 @@
 @media screen and (min-width: 769px) and (max-width: 1440px) {
+    @keyframes apparition {
+        0% {
+        opacity: 0;
+        }
+        100%{
+            opacity: 1;
+        }
+    }
     .explore-container{
         width: 100vw;
         height: 100vh;
@@ -6,6 +14,15 @@
         background-image: url("../../static/home/background-home-desktop.jpg");
         background-size: cover;
         padding: 40px 0px 131px 55px;
+        .text-container{
+            margin-top: 251px;
+            margin-left: 165px;
+            margin-right: 386px;
+            animation: apparition 3s ;
+        }
+        .button-container{
+            margin-top: 359px;
+        }
+       
     }
-
 }
