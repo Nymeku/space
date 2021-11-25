@@ -1,38 +1,43 @@
-@media screen and (min-width: 769px) and (max-width: 1440px) {
+@media screen and (min-width: 968px) and (max-width: 1728px) {
   .outter-container {
-    width: 1385px;
+    width: 100vw;
     height: 96px;
     display: flex;
     align-items: center;
-    position: fixed;
+    justify-content: flex-end;
     right: 0;
+    padding: 0 0 0 55px;
     svg {
       margin-right: 64px;
       position: relative;
+      flex-shrink: 0;
     }
 
     .line {
-      width: 473px;
+      width: 100%;
       height: 1px;
       position: relative;
-      margin-right: -30px;
+      
       opacity: 25.15%;
       z-index: 3;
+      flex-shrink: 1;
     }
     .navbar-container {
       width: 830px;
+      margin-left: -30px;
       height: 100%;
       background: rgba(255, 255, 255, 0.04);
       backdrop-filter: blur(81.5485px);
       display: flex;
       align-items: center;
+      padding-right: 165px;
       .navbar-inner {
         width: 542px;
         height: 100%;
         margin-left: 123px;
         display: flex;
         justify-content: space-between;
-        font-family: "Barlow Condensed", "sans-serif";
+        font-family: var(--space-font-barlow-condensed);
         font-size: 16px;
         color: white;
         letter-spacing: 2.7px;
@@ -49,9 +54,68 @@
             border-bottom: 3px solid rgba(255, 255, 255, 0.502);
           }
         }
-        .active{
+        .active {
           border-bottom: 3px solid white;
-          &:hover{
+          &:hover {
+            cursor: pointer;
+            border-bottom: 3px solid white;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 376px) and (max-width: 967px) {
+  * {
+    // outline: inset 0.5px red;
+    // outline-style: dashed;
+  }
+  .outter-container {
+    width: 729px;
+    height: 96px;
+    display: flex;
+    // justify-content: space-between;
+    align-items: center;
+    svg {
+      margin-right: 231px;
+    }
+    .line {
+      display: none;
+    }
+    .navbar-container {
+      width: 450px;
+      height: 100%;
+
+      font-size: 14px;
+      display: flex;
+      font-family: var(--space-font-barlow-condensed);
+      backdrop-filter: blur(81.55px);
+      .navbar-inner {
+        width: 356px;
+        height: 100%;
+        margin-left: 48px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        // color: white;
+        letter-spacing: 2.36px;
+        a {
+          text-decoration: none;
+          color: white;
+          line-height: 96px;
+          span {
+            // color: white;
+            display: none;
+          }
+          &:hover {
+            cursor: pointer;
+            border-bottom: 3px solid rgba(255, 255, 255, 0.502);
+          }
+        }
+        .active {
+          border-bottom: 3px solid white;
+          &:hover {
             cursor: pointer;
             border-bottom: 3px solid white;
           }

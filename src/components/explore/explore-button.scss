@@ -1,4 +1,4 @@
-@media screen and (min-width: 769px) and (max-width: 1440px) {
+@media screen and (min-width: 968px) and (max-width: 1728px) {
   @keyframes pulse {
     0% {
       -moz-box-shadow: 0 0 0 0 rgb(172, 172, 172);
@@ -13,9 +13,9 @@
       box-shadow: 0 0 0 0 rgba(75, 76, 88, 0.2);
     }
   }
-  
+
   div {
-    .button-container{
+    .button-container {
       width: 274px;
       height: 274px;
       border-radius: 50%;
@@ -26,12 +26,44 @@
       letter-spacing: 2px;
       font-size: 32px;
       color: var(--space-dark-blue);
-      font-family: "Bellefair", "sans-serif";
-      position: absolute;
+      font-family: var(--space-font-bellefair);
       z-index: 5;
       cursor: pointer;
       animation: pulse 1.5s infinite;
-      
+    }
+  }
+}
+@media screen and (min-width: 376px) and (max-width: 967px) {
+  @keyframes pulse {
+    0% {
+      -moz-box-shadow: 0 0 0 0 rgb(172, 172, 172);
+      box-shadow: 0 0 0 0 rgb(172, 172, 172);
+    }
+    70% {
+      -moz-box-shadow: 0 0 0 30px rgb(134, 134, 134, 0.5);
+      box-shadow: 0 0 0 30px rgb(134, 134, 134, 0.5);
+    }
+    100% {
+      -moz-box-shadow: 0 0 0 0 rgba(75, 76, 88, 0.2);
+      box-shadow: 0 0 0 0 rgba(75, 76, 88, 0.2);
+    }
+  }
+  div {
+    .button-container {
+      width: 242px;
+      height: 242px;
+      border-radius: 50%;
+      background-color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      letter-spacing: 2px;
+      font-size: 32px;
+      color: var(--space-dark-blue);
+      font-family: var(--space-font-bellefair);
+      z-index: 5;
+      cursor: pointer;
+      animation: pulse 1.5s infinite;
     }
   }
 }

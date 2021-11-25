@@ -1,0 +1,26 @@
+@media screen and (min-width: 968px) and (max-width:1728px) {
+    
+    .destination-container{
+        height: 100vh;
+        background-image: url('../../../assets/background-destination-desktop.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        padding: 0 163px 112px 166.5px;
+        .outter-container{
+            position: fixed;
+            top: 40px;
+        }
+        .pick{
+            margin-bottom: 64px;
+        }
+
+        .planets-container{
+            display: flex;
+            align-items: flex-end;
+            justify-content: space-between;
+        }
+    }
+}

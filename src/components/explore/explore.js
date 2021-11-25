@@ -4,13 +4,14 @@ import Text from "./text";
 import ExploreButton from "./explore-button";
 import "./explore.scss";
 
-
 function Explore() {
   return (
     <main className="explore-container">
       <Navbar />
-      <Text />
-    <ExploreButton />
+      <div className="adventurous">
+        <Text />
+        <ExploreButton />
+      </div>
     </main>
   );
 }

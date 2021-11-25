@@ -1,23 +1,24 @@
 import React from "react";
 import "./navbar.scss";
 import "../../public/assets/shared/logo.svg";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const active = window.location.href.split("/")[3];
 
   const Onglet = (path, numbers, text) => {
     return (
-      <a href={path}>
+      <Link to={path}>
         <span>{numbers}</span> {text}
-      </a>
+      </Link>
     );
   };
 
   const OngletActive = (path, numbers, text) => {
     return (
-      <a href={path} className="active">
+      <Link to={path} className="active">
         <span>{numbers}</span> {text}
-      </a>
+      </Link>
     );
   };
 

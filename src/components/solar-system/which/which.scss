@@ -1,0 +1,11 @@
+@media screen and (min-width: 968px) and (max-width:1728px) {
+    .which-container{
+        width: 472px;
+        height: 445px;
+        display: flex;
+        flex-direction: column;
+        .mininavbar-outter{
+            margin-bottom: 37px;
+        }
+    }
+}
