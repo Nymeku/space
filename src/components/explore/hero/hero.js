@@ -1,7 +1,7 @@
 import React from "react";
-import "./text.scss";
+import "./hero.scss";
 
-function Text() {
+function Hero() {
   return (
     <div className="text-container">
       <span>SO, YOU WANT TO TRAVEL TO</span>
@@ -16,4 +16,4 @@ function Text() {
   );
 }
 
-export default Text;
+export default Hero;

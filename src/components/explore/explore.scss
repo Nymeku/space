@@ -7,6 +7,26 @@
       opacity: 1;
     }
   }
+  @keyframes machin {
+    0%{
+      transform: translateX(100vw);
+    }
+    100%{
+      transform: translateX(-100vw);
+    }
+  }
+  .transition-test{
+    width: 100vw;
+    height: 100vh;
+    z-index: 9877787;
+    background-color: var(--space-dark-blue);
+    animation: machin 2s;
+  }
+
+  .truc{
+    background-color: red;
+  }
+  
   .explore-container {
     height: 100vh;
     background-image: url("../../assets/background-home-desktop.jpg");
@@ -14,6 +34,7 @@
     padding: 40px 165px 131px 165px;
     display: flex;
     flex-direction: column;
+    
     .outter-container{
       position: fixed;
     }
@@ -25,6 +46,7 @@
       .text-container {
         animation: apparition 3s;
       }
+      
     }
   }
 }

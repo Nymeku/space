@@ -1,0 +1,46 @@
+@media screen and (min-width: 968px) and (max-width: 1440px) {
+    @keyframes truc {
+        0%{
+            opacity: 0;
+            transform: translateY(600px);
+        }
+        100%{
+          opacity: 1;
+          transform: translateY(0);
+        }
+    }
+  .nairi {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    margin-bottom: 150px;
+    animation: truc 1.5s;
+    &:last-child {
+      margin-bottom: 0px;
+    }
+    .ship-text {
+      max-width: 470px;
+      .terminology {
+        font-family: var(--space-font-barlow-condensed);
+        font-size: 16px;
+        color: var(--space-light-blue);
+        letter-spacing: 2.7px;
+        margin-bottom: 11px;
+      }
+      .name {
+        font-family: var(--space-font-bellefair);
+        font-size: 56px;
+        color: white;
+        margin-bottom: 17px;
+      }
+      .description {
+        font-family: var(--space-font-barlow);
+        font-size: 18px;
+        color: var(--space-light-blue);
+        line-height: 32px;
+        
+      }
+    }
+  }
+}

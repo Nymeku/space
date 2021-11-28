@@ -17,6 +17,8 @@
       flex-direction: column;
       justify-content: flex-end;
       .pick{
+        position: fixed;
+        top: 212px;
         span{
           margin-right: 24px;
         }

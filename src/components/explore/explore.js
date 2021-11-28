@@ -1,18 +1,22 @@
 import React from "react";
 import Navbar from "../navbar";
-import Text from "./text";
-import ExploreButton from "./explore-button";
+import ExploreButton from "./button/explore-button";
+import Hero from "./hero/hero";
 import "./explore.scss";
 
 function Explore() {
   return (
-    <main className="explore-container">
+    <>
+    <main className="explore-container"  >
       <Navbar />
-      <div className="adventurous">
-        <Text />
+      <div className="adventurous" >
+        <Hero />
         <ExploreButton />
       </div>
     </main>
+    <div id="transition">
+    </div>
+    </>
   );
 }
 
