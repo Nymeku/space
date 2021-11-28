@@ -6,7 +6,6 @@ function PlanetInfos({currentPlanet}) {
     
     const object = data.destinations.find(item => item.name.toLowerCase() === currentPlanet)
 
-    console.log(object)
 
     return (
         <div className="infos">

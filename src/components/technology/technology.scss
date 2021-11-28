@@ -1,0 +1,108 @@
+@media screen and(min-width:968px) and (max-width: 1440px) {
+  .technology-container {
+    height: 100vh;
+    width: 100vw;
+    padding: 272px 0 101px 166.5px;
+    background-image: url("/assets/background-technology-desktop.jpg");
+    display: flex;
+
+    .outter-container {
+      position: fixed;
+      top: 40px;
+    }
+
+    .pick {
+      position: fixed;
+      top: 212px;
+      span {
+        margin-right: 24px;
+      }
+    }
+
+    .principal-container {
+      display: flex;
+      // justify-content: space-between;
+      align-items: center;
+      width: 100%;
+
+      .pagination-container {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        .bubble-container {
+          width: 80px;
+          height: 80px;
+          border: 1px solid rgba($color: #fff, $alpha: 0.25);
+          border-radius: 50%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          color: white;
+          font-family: var(--space-font-bellefair);
+          font-size: 32px;
+          margin-bottom: 32px;
+          &:hover{
+            border: 1px solid white;
+            cursor: pointer;
+          }
+          
+          
+        }
+
+        .active{
+          background-color: white;
+          color: black;
+        }
+        
+        &:last-child {
+          margin-bottom: 0px;
+        }
+      }
+
+      .ship-container {
+        display: flex;
+        align-items: center;
+        width: calc(100% - 80px);
+        justify-content: space-between;
+        height: 100%;
+        padding-left: 80px;
+        overflow-y: scroll;
+        flex-direction: column;
+
+        .nairi {
+          display: flex;
+          justify-content: space-between;
+          width: 100%;
+          align-items: center;
+          margin-bottom: 150px;
+          &:last-child{
+            margin-bottom: 0px;
+          }
+          .ship-text {
+            max-width: 470px;
+            .terminology {
+              font-family: var(--space-font-barlow-condensed);
+              font-size: 16px;
+              color: var(--space-light-blue);
+              letter-spacing: 2.7px;
+              margin-bottom: 11px;
+            }
+            .name {
+              font-family: var(--space-font-bellefair);
+              font-size: 56px;
+              color: white;
+              margin-bottom: 17px;
+            }
+            .description {
+              font-family: var(--space-font-barlow);
+              font-size: 18px;
+              color: var(--space-light-blue);
+              line-height: 32px;
+            }
+          }
+        }
+        
+      }
+    }
+  }
+}

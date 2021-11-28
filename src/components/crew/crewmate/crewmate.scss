@@ -1,0 +1,41 @@
+@media screen and (min-width: 968px) and (max-width: 1728px) {
+  .crewmate-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    flex-shrink: 0;
+    .text {
+      .role {
+        font-family: var(--space-font-bellefair);
+        font-size: 32px;
+        opacity: 50.42%;
+        color: white;
+        margin-bottom: 15px;
+      }
+      .name {
+        color: white;
+        font-size: 56px;
+        font-family: var(--space-font-bellefair);
+        margin-bottom: 27px;
+      }
+      .bio {
+        font-family: var(--space-font-barlow);
+        font-size: 18px;
+        color: var(--space-light-blue);
+        line-height: 32px;
+        width: 444px;
+      }
+    }
+
+    img {
+      width: 616px;
+      display: flex;
+      justify-content: flex-end;
+      object-position: bottom;
+      object-fit:contain;
+      height: 75vh;
+      margin-right: 89px;
+    }
+  }
+}

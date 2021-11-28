@@ -12,7 +12,7 @@ function Destination() {
     <>
       <div className="destination-container">
         <Navbar />
-        <Pick tag="01" text="pick your destination" />
+        <Pick tag="01" text="pick your destination"/>
         <div className="planets-container">
 
             <Which />
